@@ -35,7 +35,7 @@ fi
 CLONEDIR=$(mktemp -d)
 trap 'cleanup $CLONEDIR' EXIT
 CLUSTERDIR="$CLONEDIR/clusters/$NAME"
-git clone git@github.com:makkes/flux-mc-control-plane.git "$CLONEDIR"
+git clone git@github.com:JeanBrov/flux-mc-control-plane.git "$CLONEDIR"
 
 if [ ! -d "$CLUSTERDIR" ] ; then
     echo "Error: cluster dir doesn't exists in repository"
