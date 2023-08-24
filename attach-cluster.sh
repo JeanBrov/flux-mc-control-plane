@@ -66,7 +66,7 @@ flux install --kubeconfig "${HOST_KUBECONFIG:-${KUBECONFIG}}"
 CLONEDIR=$(mktemp -d)
 trap 'cleanup $CLONEDIR' EXIT
 CLUSTERDIR="$CLONEDIR/clusters/$NAME"
-git clone git@github.com:makkes/flux-mc-control-plane.git "$CLONEDIR"
+git clone git@github.com:JeanBrov/flux-mc-control-plane.git "$CLONEDIR"
 
 cd "$CLONEDIR"
 if [ -a "$CLUSTERDIR" ] ; then
@@ -108,7 +108,7 @@ spec:
   interval: 1m0s
   ref:
     branch: cluster/$NAME
-  url: https://github.com/makkes/flux-mc-control-plane
+  url: https://github.com/JeanBrov/flux-mc-control-plane
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
