@@ -16,7 +16,7 @@ metadata:
   name: workspace
   namespace: workspace-dev
 spec:
-  interval: 6h
+  interval: 1m0s
   prune: true
   serviceAccountName: dev
   sourceRef:
