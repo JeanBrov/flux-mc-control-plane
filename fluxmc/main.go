@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/makkes/fluxmc/cmd"
+	"github.com/JeanBrov/fluxmc/cmd"
 )
 
 func main() {

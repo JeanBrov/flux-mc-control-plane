@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"github.com/makkes/fluxmc/cmd/bootstrap"
+	"github.com/JeanBrov/fluxmc/cmd/bootstrap"
 	"github.com/spf13/cobra"
 )
 
