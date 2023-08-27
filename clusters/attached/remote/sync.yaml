@@ -5,7 +5,7 @@ metadata:
   name: cluster
   namespace: flux-system
 spec:
-  interval: 1m0s
+  interval: 10s
   ref:
     branch: cluster/attached
   url: https://github.com/JeanBrov/flux-mc-control-plane
@@ -16,7 +16,7 @@ metadata:
   name: cluster
   namespace: flux-system
 spec:
-  interval: 6h
+  interval: 10s
   prune: true
   sourceRef:
     kind: GitRepository

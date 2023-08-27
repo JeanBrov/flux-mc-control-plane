@@ -4,7 +4,7 @@ metadata:
   name: cluster-attached
   namespace: flux-system
 spec:
-  interval: 6h
+  interval: 10s
   prune: true
   path: ./clusters/attached/remote
   kubeConfig:
